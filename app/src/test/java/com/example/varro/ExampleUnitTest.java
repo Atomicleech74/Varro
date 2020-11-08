@@ -1,4 +1,4 @@
-package com.example.bmicalculator;
+package com.example.varro;
 
 import org.junit.Test;
 
