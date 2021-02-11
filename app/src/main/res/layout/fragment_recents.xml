@@ -19,4 +19,76 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="417dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <fragment
+                android:id="@+id/contact_unit1"
+                android:name="com.example.varro.ui.recents.RecentUnitFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:label="contact unit" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <fragment
+                android:id="@+id/contact_unit2"
+                android:name="com.example.varro.ui.recents.RecentUnitFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:label="contact unit" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <fragment
+                android:id="@+id/contact_unit3"
+                android:name="com.example.varro.ui.recents.RecentUnitFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:label="contact unit" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <fragment
+                android:id="@+id/contact_unit4"
+                android:name="com.example.varro.ui.recents.RecentUnitFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:label="contact unit" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
