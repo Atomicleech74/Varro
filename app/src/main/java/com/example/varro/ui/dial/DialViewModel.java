@@ -10,7 +10,7 @@ public class DialViewModel extends ViewModel {
 
     public DialViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dial fragment");
+        mText.setValue("Enter a phone # or email");
     }
 
     public LiveData<String> getText() {

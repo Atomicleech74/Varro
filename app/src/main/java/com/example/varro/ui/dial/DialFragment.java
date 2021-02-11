@@ -20,10 +20,9 @@ public class DialFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dialViewModel =
-                new ViewModelProvider(this).get(DialViewModel.class);
+        dialViewModel = new ViewModelProvider(this).get(DialViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dial, container, false);
-        final TextView textView = root.findViewById(R.id.text_dial);
+        final TextView textView = root.findViewById(R.id.phone_number_field);
         dialViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
