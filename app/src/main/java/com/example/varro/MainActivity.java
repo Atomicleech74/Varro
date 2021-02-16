@@ -2,8 +2,13 @@ package com.example.varro;
 
 import android.os.Bundle;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -25,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        GoogleSignInClient gsic = GoogleSignIn.getClient(this, gso);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        //TO BE IMPLEMENTED///
+        //updateUI(account);//
+        //////////////////////
+    }
 }
