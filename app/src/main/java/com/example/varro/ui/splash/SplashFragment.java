@@ -51,4 +51,8 @@ public class SplashFragment extends Fragment {
             }
         }
     }
+
+    protected void signInOnClick(){
+
+    }
 }
