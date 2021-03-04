@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GitHub.Varro.iml" filepath="$PROJECT_DIR$/.idea/modules/GitHub.Varro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Varro.iml" filepath="$PROJECT_DIR$/.idea/modules/Varro.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Varro.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Varro.app.iml" />
     </modules>
   </component>

@@ -1,4 +1,4 @@
-package com.example.varro;
+package com.example.varro.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.varro.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -102,4 +103,6 @@ public class MainActivity extends AppCompatActivity {
     protected void hideSplash(){
         findViewById(R.id.splash_view).setVisibility(View.INVISIBLE);
     }
+
+
 }
