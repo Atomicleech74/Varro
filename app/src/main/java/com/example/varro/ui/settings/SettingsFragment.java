@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.varro.MainActivity;
 import com.example.varro.R;
 
 public class SettingsFragment extends Fragment {

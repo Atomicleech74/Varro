@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <script>
+            window.onload = function() {
+                alert("let's go!");
+            }
+            function setVideoSize(){
+                let video = document.getElementById("video");
+                video.style.height = window.screen.availHeight;
+                video.style.width = window.screen.availWidth;
+            }
+        </script>
+    </head>
+    <body onload="setVideoSize()" style="background-color:#273477;">
+        <!--
+        <img src="sample.png"/>
+        <video id="video">
+            <source src="sample.mp4" type="video/mp4" style="position:absolute">
+            Your browser does not support the video tag.
+        </video>
+        -->
+        <h1 style="color:white;">Your call is being connected...</h1>
+    </body>
+</html>

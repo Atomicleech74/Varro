@@ -10,7 +10,7 @@ public class RecentsViewModel extends ViewModel {
 
     public RecentsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is recents fragment");
+//        mText.setValue("This is recents fragment");
     }
 
     public LiveData<String> getText() {
