@@ -3,23 +3,45 @@
     <head>
         <script>
             window.onload = function() {
-                alert("let's go!");
             }
             function setVideoSize(){
                 let video = document.getElementById("video");
                 video.style.height = window.screen.availHeight;
                 video.style.width = window.screen.availWidth;
             }
+
+
         </script>
     </head>
     <body onload="setVideoSize()" style="background-color:#273477;">
-        <!--
-        <img src="sample.png"/>
-        <video id="video">
-            <source src="sample.mp4" type="video/mp4" style="position:absolute">
+        <!--<img src="sample.png"/>-->
+        <h1 style="color:white;">Your call is being connected...</h1>
+        <video autoplay playsinline id="video">
+            <source autostyle="position:absolute">
             Your browser does not support the video tag.
         </video>
-        -->
-        <h1 style="color:white;">Your call is being connected...</h1>
     </body>
+    <script>
+        'use strict';
+
+        var constraints = {
+          video: true
+        };
+
+        var video = document.getElementById("video");
+
+        function handleSuccess(stream) {
+          window.stream = stream; // only to make stream available to console
+          video.srcObject = stream;
+          alert("success");
+        }
+
+        function handleError(error) {
+          console.log('getUserMedia error: ', error);
+          alert(error);
+        }
+        alert(navigator.mediaDevices.getUserMedia);
+        navigator.mediaDevices.getUserMedia(constraints).
+          then(handleSuccess).catch(handleError);
+    </script>
 </html>
