@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.varro.R;
 import com.google.android.gms.common.SignInButton;
+// this class is thre first screen the user sees where they can sign in through google.
 
 public class SplashFragment extends Fragment {
 

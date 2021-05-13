@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "TAG: Main Activity";
     GoogleSignInClient gsic;
+
+    // arbitrary numbers for android to kepe track of requests
     final int RC_SIGN_IN = 4;
     final int REQUEST_PERMISSIONS_CODE = 5;
     ListView l1;

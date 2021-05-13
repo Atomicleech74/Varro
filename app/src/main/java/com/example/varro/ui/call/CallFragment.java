@@ -18,6 +18,12 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.varro.R;
 
+// this activity will house the call screen
+// it will include a video element and the on screen controls
+// The video element may be a webView with an HTML page, or a Video element
+// currently it only holds an html page with a video element for the purposes of a demo
+// To Do: implement a contact class to have information pulled from to be displayed in a popup. this also applied to the recents screen
+
 public class CallFragment extends Fragment {
 
     private CallViewModel callViewModel;

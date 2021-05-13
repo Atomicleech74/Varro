@@ -23,6 +23,8 @@ import com.example.varro.R;
 
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
+// This fragment displays the contacts screen. it is a listView populated from a google account through ContactsCursorAdapter
+
 public class ContactsFragment extends Fragment {
 
     private ContactsViewModel contactsViewModel;

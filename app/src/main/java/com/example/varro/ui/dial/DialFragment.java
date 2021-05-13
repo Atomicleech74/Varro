@@ -14,6 +14,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.varro.R;
 
+// This fragment displays the Dial screen
+// none of the functionality is currently implemented
+
 public class DialFragment extends Fragment {
 
     private DialViewModel dialViewModel;

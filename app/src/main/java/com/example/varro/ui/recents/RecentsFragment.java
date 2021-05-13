@@ -14,6 +14,10 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.varro.R;
 
+// This fragment contains the recents screen.
+// it is not currently pulling from a list of recent calls. it is pulling from a hard-coded array of names
+// To Do: implement a contact class to have information pulled from to be displayed in a popup. this also applied to the contacts screen
+
 public class RecentsFragment extends Fragment {
 
     private RecentsViewModel recentsViewModel;

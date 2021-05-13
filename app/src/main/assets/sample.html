@@ -2,6 +2,13 @@
 <html>
     <head>
         <script>
+
+            // This file is the html page displayed to simulate a call.
+            // We made this when our client decided it was best to create a
+            // demo connecting two specific host devices instead of implementing
+            // the full connectivity feature.
+
+
             window.onload = function() {
             }
             function setVideoSize(){
@@ -20,6 +27,7 @@
             <source autostyle="position:absolute">
             Your browser does not support the video tag.
         </video>
+        <iframe src="http://10.80.64.141:80"></iframe>
     </body>
     <script>
         'use strict';
@@ -33,14 +41,12 @@
         function handleSuccess(stream) {
           window.stream = stream; // only to make stream available to console
           video.srcObject = stream;
-          alert("success");
         }
 
         function handleError(error) {
           console.log('getUserMedia error: ', error);
           alert(error);
         }
-        alert(navigator.mediaDevices.getUserMedia);
         navigator.mediaDevices.getUserMedia(constraints).
           then(handleSuccess).catch(handleError);
     </script>

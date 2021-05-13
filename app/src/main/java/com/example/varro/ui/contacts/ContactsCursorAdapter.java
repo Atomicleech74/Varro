@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.example.varro.R;
 
+// This file is used to import contacts from the users google account into the list view\
+// Find more information online regarding cursor adapters
+
 public class ContactsCursorAdapter extends CursorAdapter {
 
     public ContactsCursorAdapter(Context context, Cursor cursor){

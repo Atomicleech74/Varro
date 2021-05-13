@@ -14,6 +14,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.varro.R;
 
+// this fragment models what a single contact looks like in the list
+
 public class ContactUnitFragment extends Fragment {
 
     private ContactUnitViewModel contactUnitViewModel;
